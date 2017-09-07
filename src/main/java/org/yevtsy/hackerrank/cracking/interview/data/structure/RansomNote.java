@@ -25,17 +25,6 @@ public class RansomNote {
                 .forEach((key, value) -> noteMap.put(key, value.intValue()));
     }
 
-    public boolean solve() {
-        for (Map.Entry<String, Integer> note : noteMap.entrySet()) {
-            final Integer magazineOccurrences = magazineMap.get(note.getKey());
-            if (magazineOccurrences == null || magazineOccurrences < note.getValue()) {
-                return false;
-            }
-        }
-
-        return true;
-    }
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int m = scanner.nextInt();
@@ -48,9 +37,19 @@ public class RansomNote {
         scanner.close();
 
         boolean answer = s.solve();
-        if(answer)
+        if (answer)
             System.out.println("Yes");
         else System.out.println("No");
+    }
 
+    public boolean solve() {
+        for (Map.Entry<String, Integer> note : noteMap.entrySet()) {
+            final Integer magazineOccurrences = magazineMap.get(note.getKey());
+            if (magazineOccurrences == null || magazineOccurrences < note.getValue()) {
+                return false;
+            }
+        }
+
+        return true;
     }
 }
