@@ -12,6 +12,22 @@ class Node {
 public class LinkedListsDetectCycle {
 
     boolean hasCycle(Node head) {
-        throw new UnsupportedOperationException("this method is not implemented");
+        if (head == null || head.next == null) {
+            return false;
+        }
+
+        Node slow = head;
+        Node fast = head.next;
+
+        while (fast != slow) {
+            if (fast == null || fast.next == null) {
+                return false;
+            }
+
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        return true;
     }
 }
