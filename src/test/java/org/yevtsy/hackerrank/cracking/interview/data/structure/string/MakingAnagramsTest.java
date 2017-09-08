@@ -1,4 +1,4 @@
-package org.yevtsy.hackerrank.cracking.interview.data.structure;
+package org.yevtsy.hackerrank.cracking.interview.data.structure.string;
 
 import org.junit.Test;
 import org.testng.Assert;

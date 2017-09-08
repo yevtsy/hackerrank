@@ -1,4 +1,4 @@
-package org.yevtsy.hackerrank.cracking.interview.data.structure;
+package org.yevtsy.hackerrank.cracking.interview.data.structure.arrays;
 
 import java.util.Scanner;
 

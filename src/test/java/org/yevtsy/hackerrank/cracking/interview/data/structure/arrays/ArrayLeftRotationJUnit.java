@@ -1,9 +1,9 @@
-package org.yevtsy.hackerrank.cracking.interview.data.structure;
+package org.yevtsy.hackerrank.cracking.interview.data.structure.arrays;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static org.yevtsy.hackerrank.cracking.interview.data.structure.ArrayLeftRotation.arrayLeftRotation;
+import static org.yevtsy.hackerrank.cracking.interview.data.structure.arrays.ArrayLeftRotation.arrayLeftRotation;
 
 @Test
 public class ArrayLeftRotationJUnit {

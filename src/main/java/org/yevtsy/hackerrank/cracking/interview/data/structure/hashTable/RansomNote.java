@@ -1,4 +1,4 @@
-package org.yevtsy.hackerrank.cracking.interview.data.structure;
+package org.yevtsy.hackerrank.cracking.interview.data.structure.hashTable;
 
 import java.util.Arrays;
 import java.util.HashMap;
