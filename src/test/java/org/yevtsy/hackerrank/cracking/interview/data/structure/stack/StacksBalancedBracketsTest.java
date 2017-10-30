@@ -16,6 +16,21 @@ public class StacksBalancedBracketsTest {
 
     @Test
     public void complexBracketsValidation() throws Exception {
-        Assert.assertFalse(StacksBalancedBrackets.isBalanced("{{[[(())]]}}"));
+        Assert.assertTrue(StacksBalancedBrackets.isBalanced("{{[[(())]]}}"));
+    }
+
+    @Test
+    public void startsWithClosed() throws Exception {
+        Assert.assertFalse(StacksBalancedBrackets.isBalanced(")("));
+    }
+
+    @Test
+    public void oddLength() throws Exception {
+        Assert.assertFalse(StacksBalancedBrackets.isBalanced("()("));
+    }
+
+    @Test
+    public void severalClosedBrackets() throws Exception {
+        Assert.assertFalse(StacksBalancedBrackets.isBalanced("()))"));
     }
 }
