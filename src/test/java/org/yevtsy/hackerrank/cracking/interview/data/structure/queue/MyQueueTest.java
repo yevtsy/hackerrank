@@ -27,4 +27,19 @@ public class MyQueueTest {
         queue.enqueue(1);
         assertEquals((int) queue.peek(), 1);
     }
+
+    @Test
+    public void enqueueDequeuePeek() {
+        MyQueue<Integer> queue = new MyQueue<>();
+        queue.enqueue(42);
+        queue.dequeue();
+        queue.enqueue(14);
+        assertEquals((int) queue.peek(), 14);
+        queue.enqueue(28);
+        assertEquals((int) queue.peek(), 14);
+        queue.enqueue(60);
+        queue.enqueue(78);
+        queue.dequeue();
+        queue.dequeue();
+    }
 }
