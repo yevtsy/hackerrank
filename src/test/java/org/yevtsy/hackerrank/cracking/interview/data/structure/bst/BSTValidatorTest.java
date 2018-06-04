@@ -7,12 +7,12 @@ public class BSTValidatorTest {
 
     @Test
     public void testEmptyTree() {
-        Assert.assertFalse(BSTValidator.checkBST(null));
+        Assert.assertTrue(BSTValidator.checkBST(null));
     }
 
     @Test
     public void testSingleTree() {
-        Assert.assertFalse(BSTValidator.checkBST(Node.builder().data(0).build()));
+        Assert.assertTrue(BSTValidator.checkBST(Node.builder().data(0).build()));
     }
 
     @Test
@@ -71,6 +71,26 @@ public class BSTValidatorTest {
     public void testDuplicateValues() {
         final Node baseNode = Node.builder().data(5)
                 .right(Node.builder().data(5).build())
+                .build();
+
+        Assert.assertFalse(BSTValidator.checkBST(baseNode));
+    }
+
+    @Test
+    public void testWrongBST() {
+        final Node leftNode = Node.builder().data(2)
+                .left(Node.builder().data(1).build())
+                .right(Node.builder().data(4).build())
+                .build();
+
+        final Node rightNode = Node.builder().data(6)
+                .left(Node.builder().data(5).build())
+                .right(Node.builder().data(6).build())
+                .build();
+
+        final Node baseNode = Node.builder().data(3)
+                .left(leftNode)
+                .right(rightNode)
                 .build();
 
         Assert.assertFalse(BSTValidator.checkBST(baseNode));
