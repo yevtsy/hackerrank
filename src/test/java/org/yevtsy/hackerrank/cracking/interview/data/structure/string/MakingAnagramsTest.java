@@ -1,7 +1,8 @@
 package org.yevtsy.hackerrank.cracking.interview.data.structure.string;
 
 import org.junit.Test;
-import org.testng.Assert;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MakingAnagramsTest {
     @Test
@@ -11,7 +12,7 @@ public class MakingAnagramsTest {
 
         final int numberNeeded = MakingAnagrams.numberNeeded(a, b);
 
-        Assert.assertEquals(numberNeeded, 4);
+        assertEquals(numberNeeded, 4);
     }
 
     @Test
@@ -21,6 +22,6 @@ public class MakingAnagramsTest {
 
         final int numberNeeded = MakingAnagrams.numberNeeded(a, b);
 
-        Assert.assertEquals(numberNeeded, 3);
+        assertEquals(numberNeeded, 3);
     }
 }

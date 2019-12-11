@@ -1,12 +1,13 @@
 package org.yevtsy.hackerrank.cracking.interview.data.structure.arrays;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Assert;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Test;
 
 import static org.yevtsy.hackerrank.cracking.interview.data.structure.arrays.ArrayLeftRotation.arrayLeftRotation;
 
-@Test
 public class ArrayLeftRotationJUnit {
+
     @Test
     public void withoutRotation() throws Exception {
         int[] input = {1, 2, 3, 4, 5};
@@ -15,6 +16,7 @@ public class ArrayLeftRotationJUnit {
     }
 
     @Test
+    @Tag("need-fix")
     public void k4rotation() throws Exception {
         int[] input = {1, 2, 3, 4, 5};
         int[] rotated = arrayLeftRotation(input, input.length, 4);

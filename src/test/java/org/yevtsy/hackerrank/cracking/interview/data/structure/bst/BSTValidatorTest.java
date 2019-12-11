@@ -1,7 +1,7 @@
 package org.yevtsy.hackerrank.cracking.interview.data.structure.bst;
 
 import org.junit.Assert;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Test;
 
 public class BSTValidatorTest {
 

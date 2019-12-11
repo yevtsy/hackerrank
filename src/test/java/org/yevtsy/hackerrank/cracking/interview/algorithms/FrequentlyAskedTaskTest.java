@@ -1,12 +1,13 @@
 package org.yevtsy.hackerrank.cracking.interview.algorithms;
 
 import org.junit.Assert;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Test;
 
-import static org.testng.Assert.*;
 import static org.yevtsy.hackerrank.cracking.interview.algorithms.FrequentlyAskedTask.replace;
 import static org.yevtsy.hackerrank.cracking.interview.algorithms.FrequentlyAskedTask.reverse;
 
+@Tag("not-implemented")
 public class FrequentlyAskedTaskTest {
 
     @Test

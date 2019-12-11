@@ -1,9 +1,9 @@
 package org.yevtsy.hackerrank.cracking.interview.data.structure.queue;
 
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertNull;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 public class MyQueueTest {
 
