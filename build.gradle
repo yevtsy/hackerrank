@@ -16,7 +16,7 @@ repositories {
 }
 
 test {
-    useJUnitPlatform {
+    useJUnitPlatform() {
         excludeTags 'not-implemented', 'need-fix'
     }
 }
